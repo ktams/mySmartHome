@@ -1,2 +1,2 @@
 # mySmartHome
-Hard- and Software for amrt home devices
+Hard- and Software for smart home devices
