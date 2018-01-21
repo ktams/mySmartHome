@@ -24,7 +24,7 @@ ESP8266WebServer server(80);
 WiFiClient espClient;
 PubSubClient client(espClient);
 
-int Input3 = 3;
+int Input3 = 3;     //the RX pin is the input!!!
 int sensorValue3 = 0;
 char msg[20];
 
