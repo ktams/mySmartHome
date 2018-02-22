@@ -10,6 +10,7 @@ Der ESP-01 meldet sich am Netzwerk an (Dafür die Einträge für SSID und passwo
 Ist das erledigt, meldet er sich beim mqtt Broker an und bucht die "mqtt_intopic" Meldung. 
 Dort erwartet er eine Rückmeldung, ob seine "mqtt_topic" Meldung erfolgreich abgesetzt wurde.
 Dies muss natürlich ein Programm wie z.B. Openhab2, was ich zur Haussteuerung einsetze, erledigen.
+Kommt die Meldung nicht, wird jede Sekunde die Meldung so lange wiederholt, bis eine Rückmeldung kommt.
 
 Ausgelöst wird so eine Meldung durch den PIR. Der wird so eingestellt, dass er in dem Bereich auslöst, 
 der überwacht werden soll. Die Zeit sollte nicht zu lang gewählt werden, da der PIR ständig nachtriggert 
