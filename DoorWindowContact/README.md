@@ -8,7 +8,10 @@ Die Schaltung ist so aufgebaut, dass sowohl beim Öffnen, wie auch beim Schließ
 Low-Impuls generiert wird, der den Transistor (FET) durch schaltet. Die Schaltung verbraucht nur wenige µA.
 Der grösste Stromverbraucher ist dann noch die rote LED auf dem ESP-01, die fest mit der Versorgungsspannung 
 verbunden ist und nicht abgeschaltet wrden kann. Hier die Empfehlung, die LED aus zu löten oder anders 
-(brutal mechanisch) zu entfernen,wenn sie stört. Sie ist nur während der Wach-Phase an, so dass sie auch getrost dran bleiben kann.
+(brutal mechanisch) zu entfernen,wenn sie stört. Sie ist nur während der Wach-Phase an, so dass sie auch getrost dran bleiben kann.<br>
+Update: im Betrieb hat sich heraus gestellt, dass R2 und R3 220k sein müssen, da sonst kein sicherer Betrieb möglich ist.
+Gemnessener Stromverbrauch: Schalter geschlossen -> 5,8µA; Schalter offen -> 1,2µA
+Man sollte also möglichst einen Öffnerkontakt oder Umschalter als REED-Kontakt nehmen.
 
 Die Software funktioniert im wesentlichen so:<br>
 Als erstes muss der ESP dafür sorgen, dass der Transistor durchgeschaltet bleibt.
