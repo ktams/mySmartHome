@@ -1,5 +1,7 @@
 Bewegungsmelder mit ESP-01 und PIR SR HC501
 
+Gemeldet wird an einen mqtt broker.
+
 Die Hardware ist recht einfach: <br>
 Gleich-Spannung kommt aus einem Steckernetzteil und kann zwischen 5 und 15V liegen.<br>
 Diese Spannung wird für den PIR benötigt. Ein Step-Down Wandler macht daraus 3,3V für den ESP-01.<br>
