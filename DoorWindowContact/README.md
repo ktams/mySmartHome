@@ -1,5 +1,7 @@
 Batterie betriebene Tür/Fenster Überwachung mit dem ESP-01
 
+Gemeldet wird an einen mqtt broker.
+
 Die Hardware muss extrem sparsam sein, damit die Batterien/Akkus lange halten.
 Deshalb werden die Widerstände wo nötig sehr hoch gewählt. 
 Zusätzlich kommt ein CMOS-EXOR zum Einsatz, der den ESP-01 bei Änderung am Eingang kurz mit Spannung versorgt.
