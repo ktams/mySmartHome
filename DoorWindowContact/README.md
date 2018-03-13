@@ -16,5 +16,5 @@ Man sollte also möglichst einen Öffnerkontakt oder Umschalter als REED-Kontakt
 Die Software funktioniert im wesentlichen so:<br>
 Als erstes muss der ESP dafür sorgen, dass der Transistor durchgeschaltet bleibt.
 Der ESP meldet sich dann am Netzwerk an (dafür die Einträge SSID und password) Danach meldet er sich beim mqtt Broker an.
-Er meldet den Status des Eingang (offen oder geschlossen) und legt sich dann schlafen, indem er den Transistor abschaltet und sich damit die Spannung entzieht.. 
+Er meldet den Status des Eingang (offen oder geschlossen) und die Versorgungsspannung und legt sich dann schlafen, indem er den Transistor abschaltet und sich damit selbst die Versorgungsspannung entzieht.. 
 Eine Änderung am Kontakt weckt ihn auf und das Spiel beginnt von vorn.
